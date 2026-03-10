@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Futureden</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Delius&display=swap" rel="stylesheet" />
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+
+  <link rel="stylesheet" href="assets/Style.css" />
+  <link rel="stylesheet" href="assets/background.css" />
+  <link rel="stylesheet" href="assets/glass-3d.css" />
+  
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <a href="index.html">
+      <img src="FUTUREDENLOGO.png" alt="Futureden Logo">
+    </div>
+
+    <div class="menu-btn" onclick="toggleMenu()">☰</div>
+
+    <nav class="nav-links" id="navMenu">
+      <a href="index.html">Home</a>
+      <a href="Aboutus.html">About Us</a>
+
+      <div class="dropdown">
+        <a href="products.html">Products ▼</a>
+        <div class="dropdown-menu">
+          <a href="Cruise.html">Cruise Model</a>
+          <a href="Studio.html">Studio Model</a>
+          <a href="Tokyo.html">Tokyo Model</a>
+        </div>
+      </div>
+
+      <a href="Blogs.html">Blogs</a>
+      <a href="Contactus.html">Contact Us</a>
+    </nav>
+
+    <a href="Contactus.html" class="start-btn">Start Now</a>
+  </header>
+
+
+
+  <!--hero section-->
+  <!-- Luxury Hero Section (Upper) -->
+  <!-- <section class="luxury-hero">
+
+    <div class="luxury-hero-overlay"></div>
+
+    <div class="luxury-hero-top">
+      <span></span>
+      <span>Luxury Capsule Living</span>
+    </div>
+
+    <div class="luxury-hero-content">
+      <h3>
+        "FutureDEN"
+      </h3>
+
+
+      <p class="luxury-hero-tagline">
+        Smart spaces. Smarter living.
+      </p>
+
+      <a href="Contactus.html" class="luxury-hero-btn">
+        BOOK A DEMO →
+      </a>
+    </div>
+
+  </section> -->
+  <section class="luxury-hero">
+
+  <div class="luxury-hero-overlay"></div>
+
+  <div class="luxury-hero-top">
+    <span></span>
+    <span>Luxury Capsule Living</span>
+  </div>
+
+  <div class="luxury-hero-content">
+    <h3>"FutureDEN"</h3>
+
+    <p class="luxury-hero-tagline">
+      Smart spaces. Smarter living.
+    </p>
+
+    <div class="hero-btn-group">
+      <a href="Contactus.html" class="luxury-hero-btn">
+        BOOK A DEMO →
+      </a>
+
+      <a href="https://wa.me/918220333484?text=Hi%20FutureDEN,%20I%20want%20more%20details"
+         target="_blank"
+         class="luxury-hero-btn whatsapp-btn">
+        WhatsApp Us
+      </a>
+    </div>
+  </div>
+
+</section>
+<!--  Hero Section (down) -->
+  <section class="hero-section">
+
+    <div class="hero-content">
+
+      <h1>Welcome to Futureden</h1>
+      <p>
+        Futureden represents a new era of intelligent housing, designed to
+        upgrade the way you live. From compact studio pods to cruise-style
+        smart homes, every model is engineered for comfort and futuristic
+        design.
+      </p>
+      <a href="Cruise.html" class="cta-btn">Cruise Model</a>
+      <a href="Studio.html" class="cta-btn">Studio Model</a>
+      <a href="Tokyo.html" class="cta-btn">Tokyo Model</a>
+    </div>
+
+    <div class="slider-frame">
+      <div class="hero-image active">
+        <img src="./assets/images/cruise13.png" alt="Cruise model" />
+        <div class="model-overlay">
+          <span class="model-tag">PREMIUM</span>
+          <h3>Cruise Model</h3>
+          <div class="model-meta">
+            <p><strong>Dimensions:</strong> 10 × 32</p>
+            <p><strong>Design:</strong> Architectural</p>
+          </div>
+
+          <div class="model-price">₹9.99 Lakhs</div>
+        </div>
+      </div>
+
+      <div class="hero-image">
+        <img src="assets/images/WhatsApp Image 2026-01-08 at 2.09.14 PM.jpeg" alt="studio model2" />
+        <div class="model-overlay">
+          <span class="model-tag">CONTEMPORARY</span>
+          <h3>Studio Model</h3>
+
+          <div class="model-meta">
+            <p><strong>Dimensions:</strong> 10 × 30</p>
+            <p><strong>Design:</strong> Modern</p>
+          </div>
+
+          <div class="model-price">₹7.5 Lakhs</div>
+        </div>
+      </div>
+
+      <div class="hero-image">
+        <img src="./WhatsApp Image 2026-01-08 at 2.09.13 PM.jpeg" alt="tokyo model3" />
+        <div class="model-overlay">
+          <span class="model-tag">COMPACT</span>
+          <h3>Tokyo Model</h3>
+
+          <div class="model-meta">
+            <p><strong>Dimensions:</strong> 10 × 20</p>
+            <p><strong>Design:</strong> Minimal</p>
+          </div>
+
+          <div class="model-price">₹4.5 Lakhs</div>
+        </div>
+      </div>
+
+      <div class="slider-dots">
+        <span class="dot active" onclick="currentSlide(0)"></span>
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+      </div>
+    </div>
+
+  </section>
+  <section class="product-video-section">
+    <h2><span>Product</span> Videos</h2>
+
+    <div class="video-grid">
+
+      <div class="video-card">
+        <video controls poster="assets/images/WhatsApp Image 2025-12-26 at 4.27.56 PM (1).jpeg">
+          <source src="assets/videos/cruisevideo.mp4" type="video/mp4">
+        </video>
+        <h3>Cruise Model</h3>
+        <p>Luxury capsule house with premium interiors.</p>
+      </div>
+
+      <div class="video-card">
+        <video controls poster="assets/images/91423f8e-2f17-4f30-9714-b1dbaefbf51d.jpeg">
+          <source src="assets/images/WhatsApp Video 2026-02-18 at 5.43.54 PM (3).mp4" type="video/mp4">
+        </video>
+        <h3>Studio Model</h3>
+        <p>Compact smart living for urban spaces.</p>
+      </div>
+
+      <div class="video-card">
+        <video controls poster="assets/images/WhatsApp Image 2026-02-18 at 5.42.01 PM.jpeg">
+          <source src="assets/images/WhatsApp Video 2026-02-18 at 5.42.12 PM.mp4" type="video/mp4">
+        </video>
+        <h3>Tokyo Model</h3>
+        <p>Minimalist Japanese-inspired capsule home.</p>
+      </div>
+
+    </div>
+  </section>
+  <!-- ai bot -->
+<section class="ai-chat-section">
+
+  <div class="ai-chat-container">
+
+    <!-- Left Content -->
+    <div class="ai-chat-left">
+      <h2>Need Help Choosing Your Perfect Capsule?</h2>
+      <p>
+        Chat with our smart assistant to explore models, pricing, and book a demo instantly.
+      </p>
+
+      <ul>
+        <li>✔ View Capsule Models</li>
+        <li>✔ Get Instant Price</li>
+        <li>✔ Book Free Demo</li>
+        <li>✔ WhatsApp Support</li>
+      </ul>
+    </div>
+
+    <!-- Right Chatbot -->
+    <div class="ai-chat-box">
+      <div class="ai-chat-header"> FutureDEN Assistant</div>
+
+      <div class="ai-chat-body" id="chatBody">
+        <div class="bot-msg">
+          Hi  I'm <b>FutureDEN Assistant</b><br>
+          How can I help you today?
+        </div>
+
+        <div class="quick-btns">
+          <button onclick="sendMsg('models')"> View Models</button>
+          <button onclick="sendMsg('price')"> Get Price</button>
+          <button onclick="sendMsg('demo')"> Book Demo</button>
+          <button onclick="sendMsg('whatsapp')"> WhatsApp</button>
+        </div>
+      </div>
+
+      <div class="ai-chat-input">
+        <input type="text" id="userInput" placeholder="Type your message...">
+        <button onclick="userSend()">➤</button>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+  <!-- How It Works Section -->
+  <section class="workflow-section">
+    <h2><span>How</span> Futureden Works</h2>
+    <p class="workflow-subtext">
+      Experience the modern way of living with Futureden. From choosing your capsule house
+      to delivery and setup — we make futuristic living simple, fast, and accessible.
+    </p>
+
+    <div class="workflow-steps">
+
+      <div class="step-box">
+        <div class="step-number">1</div>
+        <h3>Select Your Capsule House</h3>
+        <p>Explore models like Cruise, Studio, and Tokyo — each designed for smart, modern living.</p>
+      </div>
+
+      <div class="step-box">
+        <div class="step-number">2</div>
+        <h3>Fixed Models with Bulk Custom Options</h3>
+        <p>We offer standard capsule models with fixed sizes and bulk custom options exclusively.</p>
+      </div>
+
+      <div class="step-box">
+        <div class="step-number">3</div>
+        <h3>Manufacturing & Setup</h3>
+        <p>Your capsule house is built, transported to your location, and installed with full setup support.</p>
+      </div>
+
+      
+      <div class="step-box">
+        <div class="step-number">4</div>
+        <h3>Move In & Live Futuristic</h3>
+        <p>Enjoy a smart, compact, and luxurious living experience designed for the future of housing.</p>
+      </div>
+
+    </div>
+  </section>
+  <!-- Ready To Get Started Section -->
+  <section class="cta-ready">
+    <div class="cta-ready-box">
+      <h2>Ready to Own a Capsule House?</h2>
+      <p>
+        Choose from our Studio, Tokyo, and Cruise capsule house models — designed,
+        manufactured, and delivered by Futureden for modern, smart, and compact living.
+      </p>
+
+      <a href="Contactus.html" class="cta-ready-btn">
+        Get Started
+        <i class="fas fa-arrow-right"></i>
+      </a>
+    </div>
+  </section>
+
+  <section class="cta-ready">
+    <div class="cta-ready-box onion-layout">
+
+      <!-- LEFT -->
+      <div class="onion-left">
+        <div class="onion-circle"></div>
+        <div class="onion-slider">
+          <img src="assets/images/a9b57649-c312-4ea2-ad11-1189f8df24fb.jpeg" class="onion-slide active" alt="Studio Model">
+</div>
+</div>
+<!-- RIGHT -->
+      <div class="onion-right">
+        <span class="onion-tag">CAPSULE HOMES</span>
+
+        <h2>Advanced Capsule Houses for Modern Living</h2>
+
+        <p>
+          Futureden designs and manufactures Studio, Tokyo, and Cruise capsule
+          houses — engineered for fast installation, smart living, and premium comfort.
+        </p>
+
+        <div class="onion-cards">
+          <div class="onion-card">
+            <h4>Studio Model</h4>
+            <p>Compact, efficient living for modern urban spaces.</p>
+          </div>
+
+          <div class="onion-card">
+            <h4>Tokyo Model</h4>
+            <p>Minimalist capsule design crafted by our engineering team.</p>
+          </div>
+
+          <div class="onion-card">
+            <h4>Cruise Model</h4>
+            <p>Luxury capsule homes with premium interiors.</p>
+          </div>
+        </div>
+
+        <a href="Contactus.html" class="cta-ready-btn">
+          Start Your Capsule Journey
+          <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+
+
+    </div>
+  </section>
+
+
+      <!-- LEFT CONTENT -->
+
+  <section class="fd-faq">
+    <div class="fd-faq-container">
+
+
+
+      <div class="fd-faq-left">
+        <span class="fd-faq-tag">FAQS</span>
+        <h2>Frequently Asked Questions</h2>
+        <p>
+          Everything you need to know about Futureden capsule houses,
+          manufacturing, delivery, and installation.
+        </p>
+
+        <div class="fd-faq-list">
+
+          <div class="fd-faq-item">
+            <button class="fd-faq-question" type="button">
+              What is a Futureden capsule house?
+              <span class="icon">+</span>
+            </button>
+            <div class="fd-faq-answer">
+              Futureden capsule houses are smart prefabricated homes built for quick setup, modern comfort, and strong long term durability.
+            </div>
+          </div>
+
+          <div class="fd-faq-item">
+            <button class="fd-faq-question" type="button">
+              What models do you manufacture?
+              <span class="icon">+</span>
+            </button>
+            <div class="fd-faq-answer">
+            We manufacture Studio, Tokyo, and Cruise models designed to match different space needs, lifestyles, and comfort levels.
+            </div>
+          </div>
+
+          <div class="fd-faq-item">
+            <button class="fd-faq-question" type="button">
+              How long does installation take?
+              <span class="icon">+</span>
+            </button>
+            <div class="fd-faq-answer">
+             Installation takes up to 20 days after site preparation, depending on the selected model and project location.
+            </div>
+          </div>
+
+          <div class="fd-faq-item">
+            <button class="fd-faq-question" type="button">
+              Do you deliver across India?
+
+              <span class="icon">+</span>
+            </button>
+            <div class="fd-faq-answer">
+              Yes, we provide Pan India delivery and professional installation services across all major cities and regions.
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- RIGHT IMAGE -->
+      <div class="fd-faq-right">
+        <div class="fd-faq-circle"></div>
+        <img src="./WhatsApp Image 2025-12-26 at 4.30.55 PM.jpeg" alt="Futureden Capsule House">
+
+      </div>
+
+    </div>
+  </section>
+    <section class="reviews-section">
+      <h5>REVIEWS</h5>
+      <h2>Trusted by Capsule Home Owners</h2>
+      <p>
+        See what our customers say about living in Futureden’s
+        Studio, Tokyo, and Cruise capsule houses.
+      </p>
+
+      <div class="review-slider">
+
+        <button class="slide-btn prev">‹</button>
+
+        <div class="review-track">
+          <div class="review-grid">
+
+            <!-- Review 1 -->
+            <div class="review-card">
+              <div class="quote">❝</div>
+              <div class="review-text">
+                Buying a Futureden capsule house was the best decision.
+                The installation was fast and the quality is outstanding.
+              </div>
+              <div class="stars">★★★★★</div>
+              <div class="user">
+                <img src="https://i.pravatar.cc/150?img=15">
+                <h4>Rahul Mehta</h4>
+                <span>Studio Model Owner</span>
+              </div>
+            </div>
+               
+             
+
+            <!-- Review 2 -->
+            <div class="review-card featured">
+              <div class="quote">❝</div>
+              <div class="review-text">
+                Tokyo model fits perfectly on my land.
+                Minimal design and smart features.
+              </div>
+              <div class="stars">★★★★★</div>
+              <div class="user">
+                <img src="https://i.pravatar.cc/150?img=32">
+                <h4>Anita Sharma</h4>
+                <span>Tokyo Model Owner</span>
+              </div>
+            </div>
+
+            <!-- Review 3 -->
+            <div class="review-card">
+              <div class="quote">❝</div>
+              <div class="review-text">
+                Cruise model feels like a luxury home.
+                Smooth and professional experience.
+              </div>
+              <div class="stars">★★★★★</div>
+              <div class="user">
+                <img src="https://i.pravatar.cc/150?img=11">
+                <h4>Vikram Rao</h4>
+                <span>Cruise Model Owner</span>
+              </div>
+            </div>
+
+            <!-- ADD ALL OTHER REVIEW-CARDs HERE (4–8) -->
+
+            <!-- Review 4 -->
+            <!-- <div class="review-card">
+              <div class="quote">❝</div>
+              <div class="review-text">
+                Cruise model feels like a luxury home.
+                Smooth and professional experience.
+              </div>
+              <div class="stars">★★★★★</div>
+              <div class="user">
+                <img src="https://i.pravatar.cc/150?img=11">
+                <h4>Vikram Rao</h4>
+                <span>Cruise Model Owner</span>
+              </div>
+            </div>
+ -->
+
+            
+          </div>
+          
+        </div>
+
+        <button class="slide-btn next">›</button>
+
+      </div>
+    </section>
+
+  </section>
+
+  <!-- footer -->
+  <div class="footer-company-name">
+    <h2>“INNOVATE. INSPIRE. IGNITE. — FUTUREDEN”</h2>
+  </div>
+  <footer class="footer-section">
+    <div class="footer-container">
+
+      <!-- QUICK LINKS -->
+      <div class="footer-box">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Aboutus.html">About Us</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="Blogs.html">Blogs</a></li>
+          <li><a href="Contactus.html">Contact Us</a></li>
+          <li><a href="Reviews.html" class="active">Reviews</a></li>
+
+        </ul>
+      </div>
+
+      <!-- CONTACT -->
+      <div class="footer-box footer-contact">
+        <h3>Contact</h3>
+        <ul class="contact-list">
+          <li><i class="fas fa-map-marker-alt"></i>3rd Floor, 48, 9th A Main Rd, Stage 1,<br> Indiranagar, Bengaluru, <br>
+            Karnataka 560038</li>
+          <li><i class="fas fa-envelope"></i> futureden.in@gmail.com</li>
+          <li><i class="fas fa-phone"></i> +91 8220333484</li>
+        </ul>
+      </div>
+
+
+      <!-- SOCIAL -->
+      <div class="footer-box">
+        <h3>Follow Us</h3>
+        <ul>
+          <li><a href="https://www.instagram.com/futureden.in/"><i class="fab fa-instagram"></i> Instagram</a></li>
+          <li><a href="https://www.facebook.com/profile.php?id=61585275196729"><i class="fab fa-facebook"></i>
+              Facebook</a></li>
+          <li><a href="https://x.com/FuturedenIn"><i class="fab fa-twitter"></i> Twitter</a></li>
+        </ul>
+      </div>
+
+      <!-- TERMS & CONDITIONS -->
+      <div class="footer-box">
+        <h3>Terms & Conditions</h3>
+        <ul>
+          <li><a href="Our Privacy Policy.html">Our Privacy Policy</a></li>
+          <li><a href="Our Terms OF Use .html">Our Terms Of Use</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <hr />
+    <p class="footer-copy">© 2025 Futureden. All Rights Reserved.</p>
+  </footer>
+  <script src="assets/main.js"></script>
+  <script src="assets/3d-effects.js"></script>
+  <script src="assets/scroll-3d-parallax.js"></script>
+  <script src="assets/Review.js"></script> 
+  <script src="assets/faq.js"></script>
+<script src="assets/Aboutus.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Futureden | Products</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Delius&display=swap" rel="stylesheet" />
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+<!-- ================= page links ================= -->
+  <link rel="stylesheet" href="assets/Style.css" />
+  <link rel="stylesheet" href="assets/background.css" />
+  <link rel="stylesheet" href="assets/glass-3d.css" />
+  <link rel="stylesheet" href="assets/Products.css" />
+  
+</head>
+<!-- ================= body section ================= -->
+<body>
+  <header>
+    <div class="logo">
+      <a href="index.html">
+        <img src="FUTUREDENLOGO.png" alt="futureden Logo ">
+      </a>
+    </div>
+
+    <div class="menu-btn" onclick="toggleMenu()">☰</div>
+
+    <nav class="nav-links" id="navMenu">
+      <a href="index.html">Home</a>
+      <a href="Aboutus.html">About Us</a>
+
+      <div class="dropdown">
+        <a href="products.html">Products ▼</a>
+        <div class="dropdown-menu">
+          <a href="Cruise.html">Cruise Model</a>
+          <a href="Studio.html">Studio Model</a>
+          <a href="Tokyo.html">Tokyo Model</a>
+        </div>
+      </div>
+
+      <a href="Blogs.html">Blogs</a>
+      <a href="Contactus.html">Contact Us</a>
+    </nav>
+
+    <a href="Contactus.html" class="start-btn">Start Now</a>
+  </header>
+
+
+<!-- ================= PRODUCTS HERO ================= -->
+<section class="products-hero">
+  <div class="hero-wrapper">
+
+    <!-- LEFT CARD -->
+    <div class="hero-card">
+      <h1>Futureden Capsule Model</h1>
+      <p class="sub-text">
+        Smart. Compact. Future-Ready Living Solutions.
+      </p>
+
+      <!-- MODEL OPTIONS -->
+      <div class="option-group">
+        <label>Select Model</label>
+        <div class="sizes">
+          <button class="size-btn active" data-price="750000">Studio</button>
+          <button class="size-btn" data-price="999000">Cruise</button>
+          <button class="size-btn" data-price="450000">Tokyo</button>
+        </div>
+      </div>
+
+      <!-- PRICE + QUANTITY + CART -->
+      <div class="bottom-section">
+
+        <div class="price-box">
+          <h2>₹ <span id="total-price">450000</span></h2>
+          <p class="base-price">Base: ₹ <span id="unit-price">450000</span></p>
+        </div>
+
+        <div class="quantity-box">
+          <button id="decrease">−</button>
+          <span id="quantity">1</span>
+          <button id="increase">+</button>
+        </div>
+
+        <button class="add-cart-btn">Add to Cart</button>
+
+      </div>
+    </div>
+<div class="hero-slider">
+  <img src="assets/images/29ca6e37-8b26-4b12-8093-81141b5baf42 copy.png" class="active">
+  <img src="assets/images/059d403f-20f3-4d19-9338-e5f3bc768199.jpeg">
+  <img src="assets/images/157317ff-d376-4c74-b3b3-caaf09365186.jpeg">
+
+  <button class="prev">&#10094;</button>
+  <button class="next">&#10095;</button>
+</div>
+    <!-- RIGHT IMAGE -->
+    <!-- <section class="video-slider">
+  <div class="slider">
+
+    <div class="slide active">
+      <video autoplay muted loop>
+        <source src="reels video 12-30-2025 instagram.mp4" type="video/mp4">
+      </video>
+    </div>
+
+    <div class="slide">
+      <video autoplay muted loop>
+        <source src="reels video 12-30-2025 instagram.mp4" type="video/mp4">
+      </video>
+    </div>
+
+    <div class="slide">
+      <video autoplay muted loop>
+        <source src="reels video 12-30-2025 instagram.mp4" type="video/mp4">
+      </video>
+    </div>
+
+    <button class="prev">&#10094;</button>
+    <button class="next">&#10095;</button>
+
+  </div>
+</section> -->
+
+
+  </div>
+</section>
+
+
+<!-- ================= MODELS SECTION ================= -->
+<section id="models" class="models-section">
+  <div class="container">
+
+    <h2>Our Capsule Houses</h2>
+
+    <div class="model-grid">
+
+      <!-- Cruise -->
+      <div class="model-card">
+        <img src="WhatsApp Image 2025-12-26 at 4.27.56 PM (1).jpeg" alt="Cruise Model">
+        <h3>Cruise Model</h3>
+        <p class="price">Starting ₹9.99 Lakhs</p>
+        <p>Luxury capsule home with premium interiors and spacious layout.</p>
+        <ul>
+          <li>10 × 30 ft</li>
+          <li>Premium Finish</li>
+          <li>Smart Ready</li>
+        </ul>
+        <a href="Cruise.html" class="secondary-btn">View Details</a>
+      </div>
+
+      <!-- Studio -->
+      <div class="model-card">
+        <img src="WhatsApp Image 2026-01-08 at 2.09.14 PM.jpeg" alt="Studio Model">
+        <h3>Studio Model</h3>
+        <p class="price">Starting ₹7.5 Lakhs</p>
+        <p>Compact modern living designed for urban and farm spaces.</p>
+        <ul>
+          <li>10 × 30 ft</li>
+          <li>Modern Design</li>
+          <li>Energy Efficient</li>
+        </ul>
+        <a href="Studio.html" class="secondary-btn">View Details</a>
+      </div>
+
+      <!-- Tokyo -->
+      <div class="model-card">
+        <img src="WhatsApp Image 2026-01-17 at 4.47.32 PM.jpeg" alt="Tokyo Model">
+        <h3>Tokyo Model</h3>
+        <p class="price">Starting ₹4.5 Lakhs</p>
+        <p>Minimalist Japanese-inspired capsule home for small plots.</p>
+        <ul>
+          <li>10 × 20 ft</li>
+          <li>Compact Layout</li>
+          <li>Fast Installation</li>
+        </ul>
+        <a href="Tokyo.html" class="secondary-btn">View Details</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ================= WHY CHOOSE SECTION ================= -->
+<section class="why-section">
+  <div class="container">
+    <h2>Why Choose Futureden?</h2>
+
+    <div class="why-grid">
+      <div class="why-box">
+        <i class="fas fa-clock"></i>
+        <h4>Fast Installation</h4>
+        <p>Fully installed within 1–7 days.</p>
+      </div>
+
+      <div class="why-box">
+        <i class="fas fa-home"></i>
+        <h4>Durable Structure</h4>
+        <p>Engineered for long-term strength and safety.</p>
+      </div>
+
+      <div class="why-box">
+        <i class="fas fa-sliders-h"></i>
+        <h4>Customizable</h4>
+        <p>Interiors, layout, and smart features tailored for you.</p>
+      </div>
+
+      <div class="why-box">
+        <i class="fas fa-leaf"></i>
+        <h4>Energy Efficient</h4>
+        <p>Designed for sustainable modern living.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ================= PROCESS SECTION ================= -->
+<section class="process-section">
+  <div class="container">
+    <h2>How It Works</h2>
+
+    <div class="process-grid">
+      <div class="process-step">
+        <span>01</span>
+        <h4>Select Model</h4>
+        <p>Choose Cruise, Studio, or Tokyo model.</p>
+      </div>
+
+      <div class="process-step">
+        <span>02</span>
+        <h4>Customize</h4>
+        <p>Pick interiors, features, and layout options.</p>
+      </div>
+
+      <div class="process-step">
+        <span>03</span>
+        <h4>Manufacture</h4>
+        <p>Precision-built in our facility.</p>
+      </div>
+
+      <div class="process-step">
+        <span>04</span>
+        <h4>Delivery & Setup</h4>
+        <p>Transported and installed at your site.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ================= FINAL CTA ================= -->
+<section class="products-cta">
+  <div class="container">
+    <h2>Ready to Own a Capsule Home?</h2>
+    <p>Start your futuristic living journey with Futureden today.</p>
+    <a href="Contactus.html" class="primary-btn">Get Quotation</a>
+  </div>
+</section>
+
+  
+  <!-- footer -->
+  
+  <footer class="footer-section">
+    <div class="footer-container">
+
+      <!-- QUICK LINKS -->
+      <div class="footer-box">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Aboutus.html">About Us</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="Blogs.html">Blogs</a></li>
+          <li><a href="Contactus.html">Contact Us</a></li>
+          <li><a href="Reviews.html" class="active">Reviews</a></li>
+
+        </ul>
+      </div>
+
+      <!-- CONTACT -->
+      <div class="footer-box footer-contact">
+        <h3>Contact</h3>
+        <ul class="contact-list">
+          <li><i class="fas fa-map-marker-alt"></i>3rd Floor, 48, 9th A Main Rd, Stage 1,<br> Indiranagar, Bengaluru, <br>
+            Karnataka 560038</li>
+          <li><i class="fas fa-envelope"></i> futureden.in@gmail.com</li>
+          <li><i class="fas fa-phone"></i> +91 8220333484</li>
+        </ul>
+      </div>
+
+
+      <!-- SOCIAL -->
+      <div class="footer-box">
+        <h3>Follow Us</h3>
+        <ul>
+          <li><a href="https://www.instagram.com/futureden.in/"><i class="fab fa-instagram"></i> Instagram</a></li>
+          <li><a href="https://www.facebook.com/profile.php?id=61585275196729"><i class="fab fa-facebook"></i>
+              Facebook</a></li>
+          <li><a href="https://x.com/FuturedenIn"><i class="fab fa-twitter"></i> Twitter</a></li>
+        </ul>
+      </div>
+
+      <!-- TERMS & CONDITIONS -->
+      <div class="footer-box">
+        <h3>Terms & Conditions</h3>
+        <ul>
+          <li><a href="Our Privacy Policy.html">Our Privacy Policy</a></li>
+          <li><a href="Our Terms OF Use .html">Our Terms Of Use</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <hr />
+    <p class="footer-copy">© 2025 Futureden. All Rights Reserved.</p>
+  </footer>
+  <script src="assets/main.js"></script>
+  <script src="assets/3d-effects.js"></script>
+  <script src="assets/scroll-3d-parallax.js"></script>
+  <script src="assets/Review.js"></script> 
+  <script src="assets/faq.js"></script>
+<script src="assets/Aboutus.js"></script>
+<script src="assets/Products.js"></script>
+
+</body>
+
+</html>

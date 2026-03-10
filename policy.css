@@ -1,0 +1,703 @@
+/* ===============================
+   POLICY & TERMS COMMON STYLES
+   FUTUREDEN – Capsule Living
+================================ */
+
+.policy-section,
+.terms-section {
+  background-color: #f6f4f1;
+  padding: 80px 20px;
+  font-family: "Poppins", sans-serif;
+  color: #2b2b2b;
+
+}
+
+.policy-section .container,
+.terms-section .container {
+  max-width: 1100px;
+  margin: auto;
+  background: #ffffff;
+  padding: 60px;
+  border-radius: 14px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
+}
+
+/* Headings */
+.policy-section h1,
+.terms-section h1 {
+  font-size: 42px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #1f1f1f;
+  border-bottom: 2px solid #c7a24c;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+.policy-section h2,
+.terms-section h2 {
+  font-size: 24px;
+  margin-top: 40px;
+  margin-bottom: 15px;
+  color: #2f2f2f;
+  position: relative;
+}
+
+.policy-section h2::before,
+.terms-section h2::before {
+  content: "";
+  position: absolute;
+  left: -20px;
+  top: 50%;
+  width: 8px;
+  height: 8px;
+  background: #c7a24c;
+  border-radius: 50%;
+  transform: translateY(-50%);
+}
+
+/* Text */
+.policy-section p,
+.terms-section p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+/* Lists */
+.policy-section ul,
+.terms-section ul {
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.policy-section ul li,
+.terms-section ul li {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 18px;
+}
+
+.policy-section ul li::before,
+.terms-section ul li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #c7a24c;
+  font-size: 14px;
+}
+
+/* Highlight Text */
+.policy-section strong,
+.terms-section strong {
+  color: #2f2f2f;
+  font-weight: 600;
+}
+
+/* Contact Email Style */
+.policy-section a,
+.terms-section a {
+  color: #c7a24c;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.policy-section a:hover,
+.terms-section a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .policy-section,
+  .terms-section {
+    padding: 40px 15px;
+  }
+
+  .policy-section .container,
+  .terms-section .container {
+    padding: 30px;
+  }
+
+  .policy-section h1,
+  .terms-section h1 {
+    font-size: 32px;
+  }
+
+  .policy-section h2,
+  .terms-section h2 {
+    font-size: 20px;
+  }
+
+  .policy-section p,
+  .terms-section p {
+    font-size: 15px;
+  }
+}
+/* ---------- BASIC HEADER ---------- */
+:root {
+  /* BRAND COLORS */
+  --gold-primary: #CFA55C;
+  --gold-dark: #A45E29;
+
+  /* BACKGROUNDS */
+  --bg-white: #ffffff;
+  --bg-soft: #F5F1EC;
+
+  /* TEXT */
+  --text-dark: #030303;
+  --text-muted: #6E6258;
+
+  /* UI */
+  --border-neutral: #B5A99D;
+}
+
+/* ===== GLOBAL SECTION SYSTEM ===== */
+section {
+  padding: 90px 6%;
+  background: #ffffff;
+}
+
+.section-soft {
+  background: #FCFCFC;
+}
+
+.section-stone {
+  background: #F5F1EC;
+}
+
+
+header {
+  background: var(--bg-white);
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: Arial, sans-serif;
+  color: #000;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  box-shadow: 0px 4px 10px var(--shadow-dark);
+}
+
+/* Logo */
+.logo img {
+  height: 50px;
+  /* adjust as needed */
+  width: auto;
+  display: block;
+  transform: scale(2.9);
+  /* increase visibility */
+  transform-origin: left center;
+  
+}
+
+
+/* CENTER NAV LINKS */
+.nav-links {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 28px;
+}
+
+/* Menu links */
+.nav-links a,
+.dropdown>a {
+  color: var(--text-dark);
+  text-decoration: none;
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.nav-links a:hover {
+  color: var(--gold-dark);
+}
+
+/* Start Button */
+.start-btn {
+  background: var(--gold-primary);
+  color: #fff;
+  padding: 10px 18px;
+  border-radius: 6px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.start-btn:hover {
+  background: var(--gold-dark);
+}
+
+/* ---------- DROPDOWN ---------- */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  min-width: 150px;
+  background: transparent;
+  padding: 8px 0;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: 0.3s ease;
+}
+
+.dropdown:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.dropdown-menu a {
+  background: #fff;
+  color: #000;
+  font-weight: 600;
+  padding: 10px 12px;
+  margin: 4px;
+  border-radius: 6px;
+  display: block;
+  text-align: left;
+  transition: 0.2s;
+}
+
+.dropdown-menu a:hover {
+  background: #ffffff;
+}
+
+/* ---------- MOBILE RESPONSIVE ---------- */
+.menu-btn {
+  display: none;
+  font-size: 28px;
+  color: #fff;
+  cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  .menu-btn {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 65px;
+    left: 0;
+    width: 100%;
+    background: #000;
+    flex-direction: column;
+    gap: 15px;
+    display: none;
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .dropdown-menu {
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    background: #111;
+  }
+
+  .start-btn {
+    margin-top: 10px;
+  }
+}
+
+/* ------------------ FOOTER PREMIUM UI ------------------ */
+.footer-section {
+  background: var(--bg-soft);
+  color: var(--text-dark);
+  padding: 60px 0 30px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-top: 1px solid #C39445;
+  /* UPDATED */
+}
+
+
+/* Main Footer Layout */
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+  gap: 30px;
+}
+
+/* Box + Glass Border Style for each section */
+.footer-container>div {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(195, 148, 69, 0.4);
+  /* UPDATED */
+  border-radius: 12px;
+  padding: 20px 25px;
+  flex: 1;
+  min-width: 220px;
+  transition: 0.4s ease;
+}
+
+/* Hover Glow */
+.footer-container>div:hover {
+  box-shadow: 0 0 15px #C39445;
+  transform: translateY(-5px);
+}
+
+/* Heading + Gold Line Underline */
+.footer-section h2,
+.footer-section h3 {
+  color: #C39445;
+  /* UPDATED */
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 10px;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.footer-section h2::after,
+.footer-section h3::after {
+  content: "";
+  display: block;
+  width: 55px;
+  height: 3px;
+  background: #DFC378;
+  /* UPDATED */
+  margin-top: 6px;
+  border-radius: 3px;
+}
+
+/* Vertical links */
+.footer-container a {
+  color: #000000;
+  /* UPDATED */
+  text-decoration: none;
+  padding: 4px 0;
+  transition: 0.3s;
+  position: relative;
+}
+
+/* Hover Underline Animation */
+.footer-container a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background: #C39445;
+  /* UPDATED */
+  transition: width 0.3s;
+}
+
+.footer-container a:hover::after {
+  width: 100%;
+}
+
+.footer-container a:hover {
+  color: #DFC378;
+  /* UPDATED */
+}
+
+/* Social Icons */
+.footer-social a i {
+  margin-right: 8px;
+  color: #ffa202;
+  /* UPDATED */
+  transition: 0.3s;
+}
+
+.footer-social a:hover i {
+  transform: scale(1.2);
+}
+
+/* Contact text */
+.footer-contact p {
+  margin: 5px 0;
+  color: #000000;
+  /* UPDATED */
+}
+
+/* Copyright */
+.footer-copy {
+  margin-top: 35px;
+  text-align: center;
+  color: #B3A18E;
+  /* UPDATED */
+  border-top: 1px solid rgba(195, 148, 69, 0.3);
+  /* UPDATED */
+  padding-top: 20px;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .footer-container>div {
+    width: 100%;
+  }
+}
+
+/* Footer Links */
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col ul li {
+  margin: 6px 0;
+  display: block;
+}
+
+.footer-col ul li a {
+  color: #CDC7BD;
+  /* UPDATED: soft luxury text */
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-col ul li a:hover {
+  text-decoration: underline;
+  color: #C39445;
+  /* UPDATED: FutureDen gold */
+}
+
+/* Contact Section */
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  text-align: left;
+}
+
+/* Responsive Centering */
+@media (max-width: 768px) {
+  .footer-contact {
+    text-align: center;
+    align-items: center;
+  }
+}
+
+/* Back to Top Arrow */
+.back-to-top {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  width: 50px;
+  height: 50px;
+  background: #C39445;
+  /* UPDATED */
+  color: #0f0f0f;
+  /* UPDATED */
+  font-size: 28px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  box-shadow: 0 0 10px #C39445, 0 0 20px #DFC378;
+  /* UPDATED */
+  transition: 0.3s ease;
+  z-index: 999;
+}
+
+.back-to-top:hover {
+  background: #0f0f0f;
+  color: #DFC378;
+  /* UPDATED */
+  transform: translateY(-5px);
+}
+/* Footer Bubble */
+.footer-bubble-wrap {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.footer-bubble {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background: rgba(195, 148, 69, 0.45);
+  /* UPDATED */
+  border-radius: 50%;
+  animation: footerBubble 6s linear forwards;
+}
+
+
+@keyframes footerBubble {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 0.5;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(-150px) scale(1.5);
+    opacity: 0;
+  }
+}
+
+/* Footer Contact List */
+.footer-contact .contact-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-contact .contact-list li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 16px;
+  color: #000000;
+  /* UPDATED */
+  transition: 0.3s;
+}
+
+.footer-contact .contact-list li i {
+  color: #000000;
+  /* UPDATED: gold icons */
+  min-width: 20px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.footer-contact .contact-list li:hover {
+  color: #C39445;
+  /* UPDATED */
+}
+
+
+
+/* Top Company Name in Footer */
+.footer-company-name {
+  width: 100%;
+  text-align: center;
+  padding-bottom: 20px;
+  z-index: 10;
+}
+
+.footer-company-name h2 {
+  font-size: 32px;
+  color: #ffa200;
+  /* UPDATED: FutureDen gold */
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+.footer-box {
+  height: 100%;
+  min-height: 260px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 25px;
+}
+
+.footer-container {
+  display: flex;
+  gap: 30px;
+  align-items: stretch;
+}
+
+.footer-box ul li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #CDC7BD;
+  /* UPDATED: soft readable text */
+}
+
+/* ===============================
+   CONTACT SECTION FIX
+   (Same hover effect as Follow Us)
+   =============================== */
+
+.contact-info li i {
+  color: var(--stone);
+  /* was #cccccc */
+  transition: color 0.3s ease;
+}
+
+.contact-info li:hover i {
+  color: var(--gold);
+  /* was #ffcc00 */
+}
+
+/* Follow Us Icons - default gray, show gold on click */
+.footer-social a i {
+  color: var(--stone);
+  /* was #ccc */
+  transition: color 0.3s ease;
+}
+
+.footer-social a.active i {
+  color: var(--gold);
+  /* was #ffcc00 */
+}
+
+/* (duplicate kept, colors updated only) */
+.footer-social a i {
+  color: var(--stone);
+  /* was #ccc */
+  transition: color 0.3s ease;
+}
+
+.footer-social a.active i {
+  color: var(--gold);
+  /* was #ffcc00 */
+}
+
+/* Company marquee text (NO change except color safety if needed) */
+.footer-company-name h2 {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  box-sizing: border-box;
+  animation: marquee 10s linear infinite;
+  color: var(--gold);
+  /* added gold color only */
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}

@@ -1,0 +1,199 @@
+/* ================= ROOT THEME ================= */
+:root {
+  --bg-main: #f4efe9;          /* luxury beige */
+  --bg-soft: #ebe4dc;
+  --bg-dark: #2f2f2f;
+
+  --text-main: #2b2b2b;
+  --text-muted: #6f6a64;
+
+  --gold: #c7a24c;             /* Futureden gold */
+  --gold-soft: #ead9ad;
+
+  --border-light: #d6cfc7;
+
+  --font-serif: 'Playfair Display', serif;
+  --font-sans: 'Space Grotesk', sans-serif;
+}
+
+/* ================= BASE ================= */
+.about-futureden {
+  background: var(--bg-main);
+  padding: 6rem 8vw;
+  font-family: var(--font-sans);
+}
+
+/* ================= INTRO SECTION ================= */
+.about-intro {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 5rem;
+  align-items: center;
+}
+
+.about-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ================= TEXT ================= */
+.about-label {
+  font-size: 0.65rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+.about-content h2 {
+  font-family: var(--font-serif);
+  font-size: clamp(2.3rem, 3vw, 3.2rem);
+  font-weight: 400;
+  margin-bottom: 1.6rem;
+  line-height: 1.2;
+}
+
+.about-content p {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  max-width: 520px;
+  margin-bottom: 1.2rem;
+}
+
+/* ================= BUTTON ================= */
+.product-btn,
+.about-btn {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 0.9rem 2.6rem;
+  border: 1px solid var(--gold);
+  background: transparent;
+  color: var(--gold);
+  text-decoration: none;
+  font-size: 0.75rem;
+  letter-spacing: 0.18em;
+  transition: all 0.4s ease;
+}
+
+.product-btn:hover,
+.about-btn:hover {
+  background: var(--gold);
+  color: #fff;
+}
+
+/* ================= STATS ================= */
+.about-stats {
+  margin-top: 8rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background: var(--bg-soft);
+  border-top: 1px solid var(--border-light);
+}
+
+.stat {
+  padding: 3rem 2rem;
+  text-align: center;
+  border-right: 1px solid var(--border-light);
+}
+
+.stat:last-child {
+  border-right: none;
+}
+
+.stat h4 {
+  font-family: var(--font-serif);
+  font-size: 2.4rem;
+  font-weight: 400;
+  color: var(--gold);
+}
+
+.stat p {
+  font-size: 0.7rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-top: 0.6rem;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 900px) {
+  .about-intro,
+  .about-mission {
+    grid-template-columns: 1fr;
+  }
+
+  .about-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .stat {
+    border-right: none;
+    border-bottom: 1px solid var(--border-light);
+  }
+
+  .stat:last-child {
+    border-bottom: none;
+  }
+}
+.modern-section {
+  padding: 90px 0;
+}
+
+.bg-light {
+  background: #f7f7f7;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.narrow {
+  max-width: 800px;
+}
+
+.center {
+  display: block;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.founder-grid,
+.two-col-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 50px;
+  align-items: center;
+}
+
+.info-card {
+  background: #fff;
+  padding: 40px;
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.details-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.detail-card {
+  background: #111;
+  color: #fff;
+  padding: 30px;
+  border-radius: 16px;
+}
+
+.statement-section {
+  background: #000;
+  color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
