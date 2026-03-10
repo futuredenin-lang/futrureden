@@ -1,4 +1,4 @@
-# futrureden=# Futureden Website
+# futrureden= Futureden Website
 
 ## Project Overview
 Futureden is a modern housing platform that focuses on smart, compact, and sustainable capsule houses.  
